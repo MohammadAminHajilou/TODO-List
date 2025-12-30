@@ -39,6 +39,9 @@ function taskCreate(){
 }
 
 
+document.addEventListener("keydown", function(e) { if(e.key === "Enter") taskCreate(); });
+
+
 
 function allFunc() {
     var taskHolder = document.getElementsByClassName("taskHolder");
@@ -68,4 +71,5 @@ function allFunc() {
             div.style.display = "none";
         }
     }
+
 }
